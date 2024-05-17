@@ -1,0 +1,151 @@
+"""djangoProject URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.conf import settings
+from django.contrib import admin
+from django.urls import path
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
+from FutureGlam import views
+from django.urls import include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.Home, name="home"),
+    path("", include('chatapp.urls')),
+    path('Login', views.Login, name="login"),
+    path('Profile', views.Profile, name="profile"),
+    path('Profile1', views.Profile1, name="profile1"),
+    path('Home2', views.Home2, name="home2"),
+    path('Info', views.Info, name="info"),
+    path('Contact', views.Contact, name="contact"),
+    path('Counselling', views.Counselling, name="counselling"),
+    path('Dash', views.Dash, name="dash"),
+    path('Schedule', views.Schedule, name="schedule"),
+    path('Exam', views.Exam, name="exam"),
+    path('Result', views.Result, name="result"),
+    path('Chat', views.Chat, name="chat"),
+    path('Thanks', views.Thanks, name="thanks"),
+    path('Thanks1', views.Thanks1, name="thanks1"),
+    path('Thanks2', views.Thanks2, name="thanks2"),
+    path('Thanks3', views.Thanks3, name="thanks3"),
+    path('Thanks4', views.Thanks4, name="thanks4"),
+    path('Testinfo', views.Testinfo, name="Testinfo"),
+    path('Rules', views.Rules, name="Rules"),
+    path('Rules2', views.Rules2, name="Rules2"),
+    path('Rules3', views.Rules3, name="Rules3"),
+    path('Rules4', views.Rules4, name="Rules4"),
+    path('Rules5', views.Rules5, name="Rules5"),
+    path('signin', views.Signin, name="signin"),
+    path('signup', views.Signup, name="signup"),
+    path('Registration', views.Registration, name="Registration"),
+    path('Registration_new', views.Registration_new, name="Registration_new"),
+    path('Test_Appointment', views.Test_Appointment, name="Test_Appointment"),
+    path('Eqtestresult', views.Eqtestresult, name="Eqtestresult"),
+    path('Iitestresult', views.Iitestresult, name="Iitestresult"),
+    path('Psycotestresult', views.Psycotestresult, name="Psycotestresult"),
+    path('Selfconcepttestresult', views.Selfconcepttestresult, name="Selfconcepttestresult"),
+    path('Iqtestresult', views.Iqtestresult, name="Iqtestresult"),
+    path('p6', views.p6, name="p6"),
+    path('p7', views.p7, name="p7"),
+    path('p8', views.p8, name="p8"),
+    path('p9', views.p9, name="p9"),
+    path('p10', views.p10, name="p10"),
+    path('I1', views.I1, name="I1"),
+    path('I2', views.I2, name="I2"),
+    path('I3', views.I3, name="I3"),
+    path('I4', views.I4, name="I4"),
+    path('I5', views.I5, name="I5"),
+    path('I6', views.I6, name="I6"),
+    path('I7', views.I7, name="I7"),
+    path('I8', views.I8, name="I8"),
+    path('I9', views.I9, name="I9"),
+    path('I10', views.I10, name="I10"),
+    path('a1', views.a1),
+    path('a2', views.a2),
+    path('a3', views.a3),
+    path('a4', views.a4),
+    path('a5', views.a5),
+    path('a6', views.a6),
+    path('a7', views.a7),
+    path('a8', views.a8),
+    path('a9', views.a9),
+    path('a10', views.a10),
+    path('a11', views.a11),
+    path('a12', views.a12),
+    path('a13', views.a13),
+    path('a14', views.a14),
+    path('a15', views.a15),
+    path('a16', views.a16),
+    path('a17', views.a17),
+    path('a18', views.a18),
+    path('a19', views.a19),
+    path('a20', views.a20),
+    path('a21', views.a21),
+    path('a22', views.a22),
+    path('a23', views.a23),
+    path('a24', views.a24),
+    path('a25', views.a25),
+    path('a26', views.a26),
+    path('a27', views.a27),
+    path('a28', views.a28),
+    path('a29', views.a29),
+    path('a30', views.a30),
+    path('a31', views.a31),
+    path('a32', views.a32),
+    path('a33', views.a33),
+    path('a34', views.a34),
+    path('a35', views.a35),
+    path('a36', views.a36),
+    path('a37', views.a37),
+    path('a38', views.a38),
+    path('a39', views.a39),
+    path('a40', views.a40),
+    path('a41', views.a41),
+    path('a42', views.a42),
+    path('a43', views.a43),
+    path('a44', views.a44),
+    path('a45', views.a45),
+    path('a46', views.a46),
+    path('a47', views.a47),
+    path('a48', views.a48),
+    path('a49', views.a49),
+    path('a50', views.a50),
+    path('a51', views.a51),
+    path('a52', views.a52),
+    path('E1', views.E1),
+    path('E2', views.E2),
+    path('E3', views.E3),
+    path('E4', views.E4),
+    path('E5', views.E5),
+    path('E6', views.E6),
+    path('E7', views.E7),
+    path('E8', views.E8),
+    path('E9', views.E9),
+    path('E10', views.E10),
+    path('S1', views.S1),
+    path('S2', views.S2),
+    path('S3', views.S3),
+    path('S4', views.S4),
+    path('S5', views.S5),
+    path('S6', views.S6),
+    path('S7', views.S7),
+    path('S8', views.S8),
+    path('S9', views.S9),
+    path('S10', views.S10)
+]
+urlpatterns += staticfiles_urlpatterns()
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
